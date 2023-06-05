@@ -2,7 +2,6 @@
 --model cellfusionv10 --dimension 2d --dataset isic --unique_name isic_2d_cellfusion_V9 --start_fold 0 --batch_size 16
 1) 将Transformer模块中self-attention换成了大核+小核attention
 2) skip connection上添加了MLKA融合模块
-测试FFN的变种
 """
 import torch
 import torch.nn as nn
